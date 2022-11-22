@@ -16,6 +16,8 @@ body{
 h1{
     color: var(--color1);
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+
 }
 header{
     display: flex;
@@ -32,10 +34,11 @@ header > h1{
 button{
     background-color: var(--color2);
     height: 50px;
-    min-width: fit-content;
-    width: 150px;
+    width: fit-content;
+    padding: 10px;
     border: none;
     border-radius: 25px;
+    margin: 20px 0;
 }
 button > a{
     text-decoration: none;
