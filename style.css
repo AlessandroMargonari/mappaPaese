@@ -1,56 +1,72 @@
-:root{
-    --color1:#009EFF;
-    --color2:#00E7FF;
-    --background:#EDEDED;
+:root {
+    --color1: #009EFF;
+    --color2: #00E7FF;
+    --background: #EDEDED;
     --font1: font-family: 'Courier New', Courier, monospace;
     --font2: font-family:'Times New Roman', Times, serif;
 }
+
 @media (prefers-reduced-motion: no-preference) {
     * {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
 }
-body{
+
+body {
     margin: 0;
     background-color: var(--background);
     font-family: var(--font1);
 }
-h1{
+
+h1 {
     color: var(--color1);
     font-family: var(--font2);
     margin: 10px 0;
+}
 
-}
-header{
+header {
     background-color: var(--color1);
-    color: black;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
-header > h1{
+
+.buttons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header>h1 {
     color: black;
 }
-button{
-    margin: 0 auto;
+
+button {
     background-color: var(--color2);
-    height: 50px;
     width: fit-content;
+    height: fit-content;
     padding: 10px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: 15px;
     font-family: var(--font2);
+    overflow: hidden;
 }
-button > a{
+button>a {
     text-decoration: none;
     color: black;
 }
-main{
+button:hover{
+    border: 2px solid var(--background);
+}
+
+main {
     width: 90vw;
     margin: 1em auto;
 }
-section{
+
+section {
     border-radius: 10px;
     background-color: white;
     text-align: center;
@@ -59,48 +75,68 @@ section{
     max-height: fit-content;
     min-width: fit-content;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
-.left{
+
+.left {
     flex-grow: 2;
 }
-.right{
+
+.right {
     flex-grow: 2;
     max-width: 500px;
 }
-.all{
+
+.all {
     margin-top: 10px;
 }
-img{
+
+img {
     max-width: auto;
 }
-table{
+
+.storia{
+    border-radius: 10px;
+}
+
+table {
     border-collapse: collapse;
     margin: 0 auto;
 }
-td{
+
+td {
     width: 33%;
 }
-td:nth-child(2){
+
+td:nth-child(2) {
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
-.icon{
+
+.icon {
     width: 40px;
     height: auto;
 }
-.qr{
+
+.qr {
     height: 70px;
     width: auto;
 }
-ul{
+
+ul {
     text-align: left;
 }
-footer{
+
+iframe {
+    margin: 15px;
+}
+
+footer {
     background-color: black;
     color: white;
     font-size: small;
