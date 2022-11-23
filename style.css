@@ -24,6 +24,11 @@ h1 {
     margin: 10px 0;
 }
 
+span{
+    display: block;
+    font-size: large;
+}
+
 header {
     background-color: var(--color1);
     display: flex;
@@ -33,7 +38,6 @@ header {
 }
 
 .buttons{
-    width: 20%;
     display: flex;
     justify-content: space-around;
 }
@@ -43,6 +47,7 @@ header>h1 {
 }
 
 button {
+    margin: 0 5px;
     background-color: var(--color2);
     width: fit-content;
     height: fit-content;
@@ -97,7 +102,7 @@ section {
 }
 
 img {
-    max-width: auto;
+    max-width: 90%;
 }
 
 .storia{
@@ -133,7 +138,7 @@ ul {
 }
 
 iframe {
-    margin: 15px;
+    margin: 15px auto;
 }
 
 footer {
