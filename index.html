@@ -10,29 +10,33 @@
 </head>
 
 <body>
+    <header>
+        <h1>Mappa del Paese - San Lorenzo Dorsino</h1>
+        <button><a href="#map">Vai alla Mappa</a></button>
+    </header>
     <main>
-        <header>
-            <h1>Mappa del Paese - San Lorenzo Dorsino</h1>
-            <button><a href="#map">Vai alla Mappa</a></button>
-        </header>
-            <section>
+        <div class="wrapper">
+            <section class="left">
                 <h1>Il Progetto</h1>
                 <p>Segui la mappa per cercare i tesori nascosti del borgo.</p>
                 <p>Troverai interessanti scorci di un passato che pare molto lontano affiancati ad una cura e una
                     ricercatezza moderna che ne esalta ogni aspetto.</p>
             </section>
-            <section>
+            <section class="right">
                 <h1>Storia del Paese</h1>
                 <a href="https://borghipiubelliditalia.it/borgo/san-lorenzo-in-banale/#1480496816106-48a7f6ef-54ab">
-                <img class="storia" src="./img/bbi.png"></a>
+                    <img class="storia" src="./img/bbi.png"></a>
             </section>
-            <section>
+        </div>
+
+        <div class="wrapper">
+            <section class="left">
                 <h1>About Me</h1>
                 <p>Se vuoi collaborare, suggerire o proporre modifiche contatta il <a
                         href="http://alessandromargonari.com/">creatore della pagina</a></p>
                 <a href="mailto:alessandromargonari@gmail.com">alessandromargonari@gmail.com</a>
             </section>
-            <section>
+            <section class="right">
                 <h1>Supporta il progetto</h1>
                 <table>
                     <tr>
@@ -63,7 +67,8 @@
                             <img class="icon" src="https://www.axisfinancialservice.com/images/crypto_currency.gif">
                         </td>
                         <td>
-                            <img class="icon" src="https://lh3.googleusercontent.com/rWWKEAjwdy7ILekgpwpoopVLde5XWki4t2SPUY7eQ5dQxLgSlOo54U6J2c4ckU4AcHVJsGXAMtjE4SrKlaycNPaHErGcTdBr_stP=h600">
+                            <img class="icon"
+                                src="https://lh3.googleusercontent.com/rWWKEAjwdy7ILekgpwpoopVLde5XWki4t2SPUY7eQ5dQxLgSlOo54U6J2c4ckU4AcHVJsGXAMtjE4SrKlaycNPaHErGcTdBr_stP=h600">
                         </td>
                     </tr>
                     <tr>
@@ -73,22 +78,28 @@
                     </tr>
                 </table>
             </section>
-            <section>
-                <h1>Come usare la mappa</h1>
-                <ul>
-                    <li>Per cominciare fai click sulla mappa, verrà attiva dopo l'animazione del pulsante play verde.</li>
-                    <li>Inizialmente saranno visibili le fontane con acqua potabile, le frazioni(aree verdi) e il percorso consigliato per visitare il paese(linea arancione)</li>
-                    <li>Utilizza i filtri nella barra laterale per togliere i punti non necessari.</li>
-                    <li>Per avere una migliore visualizzazione della mappa è consigliato aprirla a schermo intero con l'apposito pulsante.</li>
-                    <li>Per la sezione svago, ristoranti/rifugi e bar sono disponibili delle immagini del lugo</li>
-                    <li>Le informazioni ruguardanti a un luogo potranno essere visualizzate nella descrizione del punto o sul sito accessobile attraverso il titolo</li>
-                </ul>
-            </section>
-            <section>
-                <h1>Mappa</h1>
-                <button><a href="https://maphub.net/embed_h/6em5weidjzXYdLN5?button=0&panel=1">Apri in un altra scheda</a></button>
-                <iframe id="map" src="https://maphub.net/embed_h/6em5weidjzXYdLN5?button=0&panel=1" frameborder="0"></iframe>
-            </section>
+        </div>
+
+        <section class="all">
+            <h1>Come usare la mappa</h1>
+            <ul>
+                <li>Per cominciare fai click sulla mappa, verrà attiva dopo l'animazione del pulsante play verde.</li>
+                <li>Inizialmente saranno visibili le fontane con acqua potabile, le frazioni(aree verdi) e il percorso
+                    consigliato per visitare il paese(linea arancione)</li>
+                <li>Utilizza i filtri nella barra laterale per togliere i punti non necessari.</li>
+                <li>Per avere una migliore visualizzazione della mappa è consigliato aprirla a schermo intero con
+                    l'apposito pulsante.</li>
+                <li>Per la sezione svago, ristoranti/rifugi e bar sono disponibili delle immagini del lugo</li>
+                <li>Le informazioni ruguardanti a un luogo potranno essere visualizzate nella descrizione del punto o
+                    sul sito accessobile attraverso il titolo</li>
+            </ul>
+        </section>
+
+        <section class="all">
+            <h1>Mappa</h1>
+            <button><a href="https://maphub.net/embed_h/6em5weidjzXYdLN5?button=0&panel=1">Apri in un altra scheda</a></button>
+          <iframe width="100%" height="576" src="https://maphub.net/embed_h/6em5weidjzXYdLN5?panel=1&panel_closed=1" frameborder="0"></iframe>
+        </section>
     </main>
     <footer>
         <p>Copyright © Alessandro Margonari 2022</p>
